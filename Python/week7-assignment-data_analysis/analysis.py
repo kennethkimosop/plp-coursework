@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.datasets import load_iris
 
-# Load dataset
+# Loading dataset
 iris = load_iris(as_frame=True)
 df = iris.frame
 df['species'] = df['target'].map(lambda t: iris.target_names[t])
